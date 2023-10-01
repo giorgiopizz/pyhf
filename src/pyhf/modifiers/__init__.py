@@ -5,6 +5,8 @@ from pyhf.modifiers.normsys import normsys_builder, normsys_combined
 from pyhf.modifiers.shapefactor import shapefactor_builder, shapefactor_combined
 from pyhf.modifiers.shapesys import shapesys_builder, shapesys_combined
 from pyhf.modifiers.staterror import staterror_builder, staterror_combined
+from pyhf.modifiers.eftcoeff import eftlin_builder, eftlin_combined
+from pyhf.modifiers.eftcoeff import eftquad_builder, eftquad_combined
 
 __all__ = [
     "histfactory_set",
@@ -29,6 +31,12 @@ __all__ = [
     "staterror",
     "staterror_builder",
     "staterror_combined",
+    "eftlin",
+    "eftlin_builder",
+    "eftlin_combined",
+    "eftquad",
+    "eftquad_builder",
+    "eftquad_combined",
 ]
 
 
@@ -44,4 +52,6 @@ histfactory_set = {
     "shapefactor": (shapefactor_builder, shapefactor_combined),
     "shapesys": (shapesys_builder, shapesys_combined),
     "staterror": (staterror_builder, staterror_combined),
+    "eftlin": (eftlin_builder, eftlin_combined),
+    "eftquad": (eftquad_builder, eftquad_combined),
 }
